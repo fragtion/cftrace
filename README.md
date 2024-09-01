@@ -1,10 +1,9 @@
-#cftrace
+# cftrace
 Perform traceroute from the Cloudflare Network to various targets.
 
 Inspired by https://github.com/jacobbednarz/cf-traceroute
-Using https://github.com/gabanz/cf-looking-glass as the data source.
 
-Corrections welcome
+Using https://github.com/gabanz/cf-looking-glass as the data source.
 
 ## Example
 ```
