@@ -5,8 +5,8 @@ import json
 def parse_args():
     parser = argparse.ArgumentParser(description="Process traceroute results.")
     parser.add_argument("-targets", required=True, help="Comma-separated list of targets")
-    parser.add_argument("-colos", required=True, help="Comma-separated list of colos")
-    parser.add_argument("-packet_type", default="udp", help="Packet type (default: udp)")
+    parser.add_argument("-colos", required=True, help="Comma-separated list of colos") # see colos.json
+    parser.add_argument("-packet_type", default="icmp", help="Packet type (default: icmp)") # icmp,udp,..
     return parser.parse_args()
 
 def fetch_traceroute_data(targets, colos, packet_type):
